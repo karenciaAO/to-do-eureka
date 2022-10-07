@@ -26,10 +26,12 @@ const deleteTodo = (id) => {
         <div>
             <h2>Nuestras tareas</h2>
             <h3>Ingrese sus tareas aqui 🐱‍👤</h3>
+            <fieldset>
             <form onSubmit={handleSubmit}>
                 <input type="text" placeholder= "Ingrese tarea aqui" onChange={(e)=>setTodo(e.target.value)}/>
                 <button type="submit">➕</button>
             </form>
+            </fieldset>
             {
                 todos.map((todo)=>
                 <div>
